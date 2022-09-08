@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Coca Cola</title>
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/logo.png" class="logo"></a>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Taste the Felling</h2>
+          <p>The interconnected global challenges of packaging waste and climate change have made this a focus for our business and we are taking a hard look at the packaging we use and how we can drive change.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/cocacola1.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/cocacola2.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/cocacola3.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/cocacola4.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/cocacola5.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/cocacola6.png" alt=""></div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <ul class="sosmed">
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+      </ul>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>
